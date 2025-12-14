@@ -69,7 +69,7 @@ resource "aws_instance" "demo_ec2" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t2.micro"
   subnet_id     = data.aws_subnets.default.ids[0]
-  key_name      = var.key_name
+  key_name      = "jenkins-pp"
   vpc_security_group_ids = [aws_security_group.web-sg-laba.id] 
 
   tags = {
