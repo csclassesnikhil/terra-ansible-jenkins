@@ -2,9 +2,6 @@
 # Get latest Amazon Linux AMI
 # ----------------------------
 
-variable "key_name" {
-description = "Existing EC2 key pair name"
-}
 
 
 data "aws_ami" "amazon_linux" {
